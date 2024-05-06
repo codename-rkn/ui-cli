@@ -659,6 +659,11 @@ class OptionParser < UI::CLI::OptionParser
         on( '--report-save-path PATH', String,
             'File path where to store the scan report.',
         ) do |path|
+            if RKN.edition == :community
+                print_error "--report-save-path option not supported by #{RKN.edition} edition."
+                exit 1
+            end
+
             options.report.path = path
         end
     end
