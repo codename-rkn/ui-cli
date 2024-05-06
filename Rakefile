@@ -24,7 +24,7 @@ end
 
 namespace :version do
     task :interface do
-        puts SCNR::UI::CLI::VERSION
+        puts RKN::UI::CLI::VERSION
     end
 
     task :engine do
@@ -32,6 +32,6 @@ namespace :version do
     end
 
     task :full do
-        puts "#{SCNR::Engine::VERSION}-#{SCNR::UI::CLI::VERSION}"
+        puts "#{SCNR::Engine::VERSION}-#{RKN::UI::CLI::VERSION}"
     end
 end

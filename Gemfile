@@ -11,7 +11,7 @@ end
 group :prof do
 
     if File.exist? '../monitor'
-        gem 'scnr-monitor', path: '../monitor'
+        gem 'rkn-monitor', path: '../monitor'
     end
 
     gem 'stackprof'
@@ -20,16 +20,24 @@ group :prof do
     gem 'memory_profiler'
 end
 
-if File.exist? '../introspector'
-    gem 'scnr-introspector', path: '../introspector'
+if File.exist? '../../scnr/scnr'
+    gem 'scnr', path: '../../scnr/scnr'
+end
+
+if File.exist? '../rkn'
+    gem 'rkn', path: '../rkn'
+end
+
+if File.exist? '../../scnr/engine'
+    gem 'scnr-engine', path: '../../scnr/engine'
+end
+
+if File.exist? '../../scnr/application'
+    gem 'scnr-application', path: '../../scnr/application'
 end
 
 if File.exist? '../application'
-    gem 'scnr-application', path: '../application'
-end
-
-if File.exist? '../scnr'
-    gem 'scnr', path: '../scnr'
+    gem 'rkn-application', path: '../application'
 end
 
 if File.exist? '../../ecsypno/license-client'
@@ -38,12 +46,12 @@ else
     gem 'ecsypno-license-client'
 end
 
-if File.exist? '../license-client'
-    gem 'scnr-license-client', path: '../license-client'
+if File.exist? '../../scnr/license-client'
+    gem 'scnr-license-client', path: '../../scnr/license-client'
 end
 
-if File.exist? '../engine'
-    gem 'scnr-engine', path: '../engine'
+if File.exist? '../license-client'
+    gem 'rkn-license-client', path: '../license-client'
 end
 
 gemspec

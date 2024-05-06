@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path( '../lib', __FILE__ )
 $LOAD_PATH.unshift( lib ) unless $LOAD_PATH.include?( lib )
-require 'scnr/ui/cli/version'
+require 'rkn/ui/cli/version'
 
 Gem::Specification.new do |s|
-    s.name          = 'scnr-ui-cli'
-    s.version       = SCNR::UI::CLI::VERSION
+    s.name          = 'rkn-ui-cli'
+    s.version       = RKN::UI::CLI::VERSION
     s.authors       = ['Tasos Laskos']
     s.email         = ['tasos.laskos@ecsypno.com']
 
@@ -31,5 +31,5 @@ Gem::Specification.new do |s|
     # Outputting data in table format (scnr_engine_rpcd_monitor).
     s.add_dependency 'terminal-table', '1.4.5'
 
-    s.add_dependency 'scnr-application', ' ~> 0.1'
+    s.add_dependency 'rkn-application', ' ~> 0.1'
 end

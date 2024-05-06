@@ -1,3 +1,3 @@
-# SCNR::UI::CLI
+# RKN::UI::CLI
 
 Command-line interface for the SCNR::Engine.
