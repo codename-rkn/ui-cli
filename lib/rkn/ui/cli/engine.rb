@@ -19,7 +19,7 @@ class Engine
     include Utilities
 
     def initialize
-        SCNR::License.guard! :dev, :trial, :community, :basic, :pro
+        RKN::License.guard! :dev, :trial, :community, :basic, :pro
 
         parse_options
         ensure_available_slots
