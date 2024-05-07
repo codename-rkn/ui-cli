@@ -394,7 +394,7 @@ class Engine
         capture_output_options
 
         if !File.directory?( options.report.path )
-            IO.binwrite( options.report.path, @application.entries.values.to_json )
+            IO.binwrite( options.report.path, @application.generate_report.data.to_json )
             filesize = (File.size( options.report.path ).to_f / 2**20).round(2)
 
             print_line
