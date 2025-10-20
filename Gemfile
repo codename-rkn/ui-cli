@@ -40,18 +40,4 @@ if File.exist? '../application'
     gem 'rkn-application', path: '../application'
 end
 
-if File.exist? '../../ecsypno/license-client'
-    gem 'ecsypno-license-client', path: '../../ecsypno/license-client'
-else
-    gem 'ecsypno-license-client'
-end
-
-if File.exist? '../../scnr/license-client'
-    gem 'scnr-license-client', path: '../../scnr/license-client'
-end
-
-if File.exist? '../license-client'
-    gem 'rkn-license-client', path: '../license-client'
-end
-
 gemspec

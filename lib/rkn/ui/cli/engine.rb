@@ -19,8 +19,6 @@ class Engine
     include Utilities
 
     def initialize
-        RKN::License.guard! :dev, :trial, :community, :basic, :pro
-
         parse_options
         ensure_available_slots
 
